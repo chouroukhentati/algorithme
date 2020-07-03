@@ -1,0 +1,35 @@
+ALGORITHM checkpoint
+VAR
+    nb : INTEGER:=0
+ nb-mot : INTRGER:=0;
+ C :INTEGER;
+ nb-lettre : INTEGER;
+ nb-voy : INTEGER:=0;
+ str : STRING;
+BEGIN
+ read(str)   
+ FOR i FROM 1 TO length(str)  DO
+     IF (str[i]='') THEN
+         nb:=nb+1
+     END_IF
+ END_FOR
+nb-mot=nb+1
+C=length(str)
+nb-lettre=c-nb-1
+FOR i FROM 1 TO length(str)  DO
+IF (str[i]=="a"ou  str[i]=="A"ou str[i]=="I"ou str[i]=="i"ou str[i]=="u"ou str[i]=="U"ou str[i]=="e"ou str[i]=="E"ou str[i]=="y"ou str[i]=="Y"ou) THEN
+    nb-voy=nb-voy+1
+ELSE
+ nb-voy=nb-voy   
+END_IF
+END_FOR
+write(nb-mot)
+write(nb-lettre)
+write(nb-voy)
+
+
+
+
+
+
+END
